@@ -23,24 +23,35 @@ using namespace std;
 int main() {
     string name;
     cout <<"Fahsai: Sawadee ka...Can you tell me your name? "<<"\n";
+    cout << "????? :" ;
     getline(cin,name);
     cout <<"Fahsai: Wow!!! " << name << " that is a really cool name."<<"\n";
     cout <<"Fahsai: I think you are Engineering student. What is your student ID?"<<"\n";
     int id;
+    cout << name <<": ";
     cin >> id;
     cin.ignore();
     cout << "Fahsai: I think you may be GEAR "<< (id /10000000)-12<< ".  I have a free movie tickets for you. "<<"\n";
     cout << "Fahsai: Let's go to cinema together!!! "<<"\n";
-    cout <<"Fahsai: What movie do you want to watch?";
+    cout <<"Fahsai: What movie do you want to watch?"<<"\n";
     string movie;
-    getline(cin,movie);
+    cout << name <<": ";
+    
     cin.ignore();
-    cout << "Fahsai: So....which day are you free to go with me?";
+    getline(cin,movie);
+    cout << "Fahsai: So....which day are you free to go with me?"<<"\n";
     string day;
+    cout << name <<": ";
+    
+    cin.ignore();
     getline(cin,day);
     cout <<"Fahsai: " << day <<"....that is OK!!! I'm looking forward to watch "<< movie <<" with you."<<"\n";
-    cout << name << ": May the Force be with you krub" << "\n";
-    cout << "Fahsai: 555+ see you "<<day<<". Bye Bye \(^ ^)/ ";
+    cout << name <<": ";
+    string jedi;
+    getline(cin,jedi);
+
+    
+    cout << "Fahsai: 555+ see you "<<day<<". Bye Bye \\(^ ^)/ ";
 
 
 
